@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# SSG
+db.json
+*.log
+public/
+.deploy*/
+
+# Nodejs
+node_modules/
+
+# IDE
+/.idea
