@@ -37,7 +37,7 @@ module.exports = {
 				pages: [ { // (optional, builds pages dynamically)
 					type: 'New',         // TypeName from prismic
 					match: '/news/:uid',  // Pages will be generated under this pattern
-					path: '/news',        // Placeholder page for unpublished documents
+					path: '/news-list',        // Placeholder page for unpublished documents
 					component: require.resolve( './src/layouts/news.js' ),
 				} ],
 			}

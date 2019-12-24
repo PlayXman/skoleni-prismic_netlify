@@ -6,20 +6,9 @@ const Videos = ( { items } ) => {
 	return (
 		<div className="videos">
 			{items.map( ( item, index ) => {
-				let el = document.createElement( 'div' );
-				el.innerHTML = item.video.html.trim();
-				el = el.firstChild;
-
 				return (
 					<div key={`video${index}`} className="videos__item">
-						<iframe
-							width={el.width}
-							height={el.height}
-							src={el.src}
-							frameBorder="0"
-							allowFullScreen={true}
-							title="Video"
-						/>
+						<div dangerouslySetInnerHTML={{__html: item.video.html.trim()}} />
 						<h4>{item.video_title[0].text}</h4>
 						{RichText.render( item.video_text )}
 					</div>
