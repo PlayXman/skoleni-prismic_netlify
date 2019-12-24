@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		title: `Gatsby Default Starter`,
-		description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-		author: `@gatsbyjs`,
+		title: `CMS preview site`,
+		description: `Let's see what Gatsby with Prismic can do together!`,
+		author: `Michael Baron`,
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
@@ -34,16 +34,16 @@ module.exports = {
 				accessToken: 'MC5YZ0VabVJBQUFDTUE4TjVR.77-977-9LGHvv71l77-9Ww5577-9Jhbvv73vv73vv73vv73vv73vv73vv70w77-9Q--_ve-_ve-_vVwRMjbvv73vv70', // (optional API access token)
 				path: '/preview', // (optional preview path. Default: /preview)
 				previews: true, // (optional, activated Previews. Default: false)
-				pages: [ { // (optional, builds pages dynamically)
-					type: 'news',         // TypeName from prismic
-					match: '/news/:uid',  // Pages will be generated under this pattern
-					path: '/news',        // Placeholder page for unpublished documents
-					component: require.resolve( './src/templates/news.js' ),
-				} ],
+				// pages: [ { // (optional, builds pages dynamically)
+				// 	type: 'news',         // TypeName from prismic
+				// 	match: '/news/:uid',  // Pages will be generated under this pattern
+				// 	path: '/news',        // Placeholder page for unpublished documents
+				// 	component: require.resolve( './src/pages/news.js' ),
+				// } ],
 			}
-		}
+		},
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
 		// `gatsby-plugin-offline`,
 	],
-}
+};
