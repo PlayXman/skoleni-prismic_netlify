@@ -1,0 +1,11 @@
+.carousel {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.carousel__item {
+	padding: 10px;
+	width: 33%;
+	min-width: 120px;
+}
