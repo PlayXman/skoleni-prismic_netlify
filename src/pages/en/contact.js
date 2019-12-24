@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby";
 import { RichText } from 'prismic-reactjs'
-import Contact from "../layouts/contact";
+import Contact from "../../layouts/contact";
 
 const ContactPage = ( { data } ) => {
 	const pageData = data.prismic.allContacts.edges[0].node;
@@ -10,7 +10,7 @@ const ContactPage = ( { data } ) => {
 		<Contact
 			title={pageData.title}
 			bannerSrc={pageData.banner_image.url}
-			lang="cs-cz"
+			lang="en-us"
 			map={pageData.map}
 		>
 			{RichText.render( pageData.content )}
@@ -23,7 +23,7 @@ export default ContactPage;
 export const query = graphql`
 query {
   prismic {
-      allContacts(lang: "cs-cz") {
+      allContacts(lang: "en-us") {
         edges {
           node {
             title

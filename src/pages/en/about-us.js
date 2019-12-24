@@ -1,5 +1,5 @@
 import React from "react"
-import AboutUs from "../layouts/aboutus";
+import AboutUs from "../../layouts/aboutus";
 import { graphql } from "gatsby";
 import { RichText } from 'prismic-reactjs'
 
@@ -10,7 +10,7 @@ const About = ( {data}) => {
 		<AboutUs
 			title={pageData.title}
 			bannerSrc={pageData.banner_image.url}
-			lang='cs-cz'
+			lang='en-us'
 			employees={pageData.employees}
 		>
 			{RichText.render(pageData.content)}
@@ -23,7 +23,7 @@ export default About;
 export const query = graphql`
 query {
    prismic {
-      allAbout_uss(lang: "cs-cz") {
+      allAbout_uss(lang: "en-us") {
         edges {
           node {
             title

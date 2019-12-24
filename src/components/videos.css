@@ -1,0 +1,14 @@
+.videos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.videos__item {
+	min-width: 120px;
+}
+
+.videos__item iframe {
+	width: 100%;
+	height: auto;
+}

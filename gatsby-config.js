@@ -34,12 +34,12 @@ module.exports = {
 				accessToken: 'MC5YZ0VabVJBQUFDTUE4TjVR.77-977-9LGHvv71l77-9Ww5577-9Jhbvv73vv73vv73vv73vv73vv73vv70w77-9Q--_ve-_ve-_vVwRMjbvv73vv70', // (optional API access token)
 				path: '/preview', // (optional preview path. Default: /preview)
 				previews: true, // (optional, activated Previews. Default: false)
-				// pages: [ { // (optional, builds pages dynamically)
-				// 	type: 'news',         // TypeName from prismic
-				// 	match: '/news/:uid',  // Pages will be generated under this pattern
-				// 	path: '/news',        // Placeholder page for unpublished documents
-				// 	component: require.resolve( './src/pages/news.js' ),
-				// } ],
+				pages: [ { // (optional, builds pages dynamically)
+					type: 'New',         // TypeName from prismic
+					match: '/news/:uid',  // Pages will be generated under this pattern
+					path: '/news',        // Placeholder page for unpublished documents
+					component: require.resolve( './src/layouts/news.js' ),
+				} ],
 			}
 		},
 		// this (optional) plugin enables Progressive Web App + Offline functionality

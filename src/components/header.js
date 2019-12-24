@@ -24,7 +24,7 @@ const Header = ( { siteTitle } ) => {
 				</h1>
 				<div>
 					<Link className="header__link" to="/about-us">O nas</Link>
-					<Link className="header__link" to="/news">Novinky</Link>
+					<Link className="header__link" to="/news-list">Novinky</Link>
 					<Link className="header__link" to="/contact">Kontakt</Link>
 				</div>
 			</div>
